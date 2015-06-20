@@ -1,0 +1,88 @@
+<DOCTYPE html>
+<html>
+<head>
+	<title>Local Storage</title>
+<script type="text/javascript" src="jquery.min.js"></script>
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
+<script type="text/javascript" src="app.js"></script>
+<style type="text/css">
+	#container{
+		margin:10px 10px 10px 10px;
+	    border: 1px solid black;
+	}
+	#user1{
+		width: 40%;
+		height: 95%;
+	    margin:20px 20px;
+        float: left; 
+	    border: 1px solid black;
+	    
+	}
+	#user2{
+		width: 40%;
+		height: 95%;
+	    margin:20px 0px;
+        float: right;
+	    border: 1px solid black;
+	    
+	}
+  .textareausr1,.textareausr2{
+    height: 575px;
+    overflow-y:scroll;
+  }
+	.typesection{
+		position: absolute;
+		bottom: 13px;
+	}
+	.usr1msg,.usr2msg{
+		width: 480px;
+	}
+	.msgofusr1,.msgofusr2{
+		  font-size: 18px;
+    margin: 0px;
+    display: block;
+    float: left;
+
+    }
+    .msgforusr2,.msgforusr1{
+    	display: block;
+    	float: right;
+    }
+    .msgofusr1 button{
+    	height: 25px;
+    }
+
+</style>
+</head>
+<body>
+  <div id="container">
+  	<div id="user1">
+  		<label for="user1"><b>User1</b></label>
+  		<div class="msgarea_usr1">
+  	      <div class="textareausr1">
+  	      	
+  	      </div>
+  	      <div class="typesection">
+  	       <input type="text" class="usr1msg" placeholder="type here" required/><button type="submit" class="usr1btn">Send</button>	 
+  	      </div>		
+  		</div>
+  	  </div>
+  	<div id="user2">
+  		<label for="user2"><b>User2</b></label>
+  		<div class="msgarea_usr2">
+  			<div class="textareausr2">
+  				
+  			</div>
+  		    <div class="typesection">
+  	      	 <input type="text" class="usr2msg" placeholder="type here" required/><button type="submit" class="usr2btn">Send</button>
+  	        </div>		
+  		</div>
+  	 </div>
+  </div>
+  <div id="edit">
+  	   	  <span>Edit Here</span>
+  	   	  <input type="text" id="textedit" />
+  	   	  <button type="button" class="done">Done</button>
+  </div>
+</body>
+</html>
